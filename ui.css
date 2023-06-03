@@ -1,0 +1,1143 @@
+BODY
+{
+    MARGIN-TOP: 0px;
+    MARGIN-LEFT: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+TABLE
+{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+}
+TR 
+{
+	vertical-align: top;
+}
+TD
+{
+    text-align:left;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	padding: 0px;
+}
+TH
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 100%;
+	VERTICAL-ALIGN: middle;
+	COLOR: #000000;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #cccccc;
+	TEXT-ALIGN: center;
+}
+H2
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: baseline;
+    COLOR: #000000;
+    TEXT-INDENT: 2pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+H1
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 105%;
+    VERTICAL-ALIGN: text-bottom;
+    TEXT-INDENT: 2pt;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+HR
+{
+    COLOR: #666666;
+    BACKGROUND-COLOR: #cccccc
+}
+IMG
+{
+    border:0px;
+    vertical-align:middle;
+}
+
+TABLE.grid
+{
+	border: 1px solid #cccccc; 
+	padding: 1px;
+	margin: 0px;
+	border-collapse:separate;
+	border-color:#cccccc;
+}
+TABLE.grid TH,
+TABLE.grid TD
+{
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+TABLE.grid TD
+{
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+TABLE.opgrid
+{
+    border: 1px solid #cccccc; 
+	padding: 1px;
+	margin: 0px;
+	border-collapse:separate;
+	border-color:#cccccc;
+    
+}
+
+TABLE.opgrid TH,
+
+TABLE.opgrid TD
+{
+}
+
+
+.thHeader
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 100%;
+	VERTICAL-ALIGN: middle;
+	COLOR: #000000;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #cccccc;
+	TEXT-ALIGN: center;
+}
+.evenRow
+{
+	BACKGROUND-COLOR: #dddddd;
+	vertical-align: middle;
+}
+.oddRow
+{
+	BACKGROUND-COLOR: #eeeeee;
+	vertical-align: middle;
+}
+.cellLabel
+{
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    TEXT-TRANSFORM: none;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right;
+    padding-right: 10px;
+}
+
+
+.cellLabelBold
+{
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    TEXT-TRANSFORM: none;
+    COLOR: #000000;
+    font-weight:bold;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right;
+    padding-right: 10px;
+}
+
+.cellData
+{
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left;
+}
+.cellDataCenter
+{
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: center;
+}
+.cellLabelLeft
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    TEXT-TRANSFORM: none;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.cellLabelQuestion
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 100%;
+    BACKGROUND-IMAGE: url(/images/core/dot.gif);
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.cellLabelStatic
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.cellLabelStaticLeft
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.cellLabelStaticRight
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+
+
+
+.buttonStyleGeneric
+{
+	FONT-SIZE: 100%;
+	COLOR: white;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #6b78a2;
+	font-weight: bold;
+	vertical-align: middle;
+	height: 25px;
+	width: 80px;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.buttonStyleLong
+{
+	FONT-SIZE: 100%;
+	COLOR: white;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #6b78a2;
+	font-weight: bold;
+	vertical-align: middle;
+	height: 25px;
+	margin-bottom: 15px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.errorText {
+	color: #FF0000;
+	font-weight: bold;
+	vertical-align: middle;
+	font-size: 100%;
+}
+.buttons
+{
+    VERTICAL-ALIGN: middle;
+    TEXT-ALIGN: center
+}
+.sectHead,
+.sectHead A:link,
+.sectHead A:visited,
+.sectHead A:active,
+.sectHead A:hover,
+.sectHeadCenter,
+.sectHeadRight
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 100%;
+	VERTICAL-ALIGN: middle;
+	COLOR: #ffffff;
+	TEXT-INDENT: 2pt;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	HEIGHT: 27px;
+	BACKGROUND-COLOR: #6b78a2;
+	TEXT-ALIGN: left;
+	padding-left: 10px;
+}
+.sectHead A:link,
+.sectHead A:visited,
+.sectHead A:active,
+.sectHead A:hover
+{
+	padding-left: 0px;
+	text-decoration: none;
+}
+.sectHeadLink a:
+{
+	padding-left: 0px;
+	text-decoration: none;
+}
+.sectHeadCenter
+{
+    TEXT-ALIGN: center;
+}
+.sectHeadRight
+{
+    TEXT-ALIGN: right;
+	padding-right: 10px;
+}
+
+.horizontalSpacer
+{
+    HEIGHT: 5px
+}
+.sectionSpacer
+{
+    HEIGHT: 15px
+}
+.rightBorder
+{
+    WIDTH: 5px;
+    BACKGROUND-COLOR: #9b6cbb
+}
+.sideBar
+{
+    VERTICAL-ALIGN: top;
+    WIDTH: 140px;
+    BACKGROUND-COLOR: #666699
+}
+.error
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #FF0000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.warning
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #ffff00;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.completionText
+{
+    FONT-SIZE: 125%;
+}
+.cellDataBold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.cellDataDifferent
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #ff0000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.searchBar
+{
+    FONT-SIZE: 71%;
+	COLOR: #ffffff;
+	BACKGROUND-COLOR: #6b78a2
+}
+.copy
+{
+    FONT-SIZE: 71%;
+	COLOR: #aaaaaa
+}
+.globalNav
+{
+    FONT-SIZE: 75%
+}
+.topNav
+{
+    FONT-SIZE: 90%;
+	BACKGROUND-COLOR: #cccccc;
+	vertical-align:middle;
+}
+.stepDescription
+{
+	FONT-SIZE: 85%;
+	COLOR: #000000;
+	vertical-align: top;
+	text-align: left;
+}
+
+.grayLink
+{
+    COLOR: #aaaaaa;
+	TEXT-DECORATION: none
+}
+.sectionHeader
+{
+    COLOR: #333366;
+	FONT-WEIGHT: bold
+}
+
+.whiteLink
+{
+    COLOR: #ffffff;
+	TEXT-DECORATION: none
+}
+.blackLink
+{
+    COLOR: #000000;
+	TEXT-DECORATION: none
+}
+
+.searchBarBG
+{
+	BACKGROUND-COLOR: #6b78a2;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 80%;
+}
+
+.white
+{
+    BACKGROUND-COLOR: #FFFFFF
+}
+.darkGray
+{
+    BACKGROUND-COLOR: #999999
+}
+.midGray
+{
+    BACKGROUND-COLOR: #666666
+}
+.rightColumn
+{
+    BACKGROUND-COLOR: #f2f2e6
+}
+.topNavBG
+{
+    BACKGROUND-COLOR: #cccccc
+}
+
+
+
+
+
+ul.NavLeft
+{
+    color: #666699;
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+ul.NavLeft,
+ul.NavLeft li,
+ul.NavLeft li a
+{
+	color: #666699;
+	text-decoration: none;
+}
+
+ul.NavLeft li.NavLeft1,
+ul.NavLeft li.NavLeft1_Active,
+ul.NavLeft li.NavLeft1_Invalid
+{
+	font-size: 90%;
+	margin-top: 3px;
+}
+
+ul.NavLeft li.NavLeft1_Active,
+ul.NavLeft li.NavLeft2_Active,
+ul.NavLeft li.NavLeft3_Active,
+ul.NavLeft li.NavLeft4_Active
+{
+	font-weight: bold;
+}
+
+ul.NavLeft li.NavLeft1_Invalid,
+ul.NavLeft li.NavLeft2_Invalid,
+ul.NavLeft li.NavLeft3_Invalid,
+ul.NavLeft li.NavLeft4_Invalid
+{
+	color: Gray;
+	font-style: italic;
+}
+
+ul.NavLeft li.NavLeft2,
+ul.NavLeft li.NavLeft2_Active,
+ul.NavLeft li.NavLeft2_Invalid,
+ul.NavLeft li.NavLeft3,
+ul.NavLeft li.NavLeft3_Active,
+ul.NavLeft li.NavLeft3_Invalid,
+ul.NavLeft li.NavLeft4,
+ul.NavLeft li.NavLeft4_Active,
+ul.NavLeft li.NavLeft4_Invalid
+{
+	font-size: 85%;
+	background-image: url(/images/core/NavLeftBullet.gif);
+	background-repeat: no-repeat;
+}
+
+ul.NavLeft li.NavLeft2,
+ul.NavLeft li.NavLeft2_Line,
+ul.NavLeft li.NavLeft2_Active,
+ul.NavLeft li.NavLeft2_Invalid
+{
+	background-position: 10px 0.4em;
+	padding-left: 20px;
+}
+
+ul.NavLeft li.NavLeft3,
+ul.NavLeft li.NavLeft3_Line,
+ul.NavLeft li.NavLeft3_Active,
+ul.NavLeft li.NavLeft3_Invalid
+{
+	background-position: 30px 0.4em;
+	padding-left: 40px;
+}
+
+ul.NavLeft li.NavLeft4,
+ul.NavLeft li.NavLeft4_Line,
+ul.NavLeft li.NavLeft4_Active,
+ul.NavLeft li.NavLeft4_Invalid
+{
+	background-position: 50px 0.4em;
+	padding-left: 60px;
+}
+
+ul.NavLeft li hr
+{
+    color: #9e9e9e;
+    height: 1px;
+    width: 98%;
+}
+
+ul.NavLeft li.NavLeft1_Line,
+ul.NavLeft li.NavLeft2_Line,
+ul.NavLeft li.NavLeft3_Line,
+ul.NavLeft li.NavLeft4_Line
+{
+    height: 0;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.grayText
+{
+	COLOR: #999999;
+	font-size: 85%;
+	vertical-align: top;
+	text-align: left;
+}
+.buttonStyle
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 12px;
+    WIDTH: 60px;
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #cccccc
+}
+.buttonStyleSmall
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 70%;
+	COLOR: #6B78A2;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	height: 23px;
+}
+
+.paging
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 70%;
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+.logoff 
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-weight: bold;
+	text-transform: capitalize;
+	color: #666699;
+	text-align: center;
+	text-decoration: none;
+}
+.whiterow 
+{
+	height: 22px;
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	text-decoration: none;
+}
+.celldataright 
+{
+	FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+LI
+{
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 2px;
+	color: #666699;
+}
+.cellDataBoldRight
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.cellDataBoldLeft
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.cellDataBoldCenter
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: center
+}
+.cellDataCenter
+{
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: center    
+}
+.cellDataCenterWhite
+{
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: middle;
+    COLOR: #ffffff;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: center
+}
+.logofftop
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	text-transform: capitalize;
+	color: #666699;
+	text-align: left;
+	text-decoration: none;
+	font-weight: bold;
+}
+.requiredtext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 15px;
+	background-color: #FFFFFF;
+}
+.cellLabelTop
+{
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    TEXT-TRANSFORM: none;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.celldatarightTop
+{
+	FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.cellDataBoldRightTop
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: right
+}
+.cellDataBoldTop
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: top;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+.cellDataBoldBottom
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    VERTICAL-ALIGN: bottom;
+    COLOR: #000000;
+    TEXT-INDENT: 0pt;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-ALIGN: left
+}
+
+.borderTable
+{
+	border: 1px solid #666666;
+	border-collapse: collapse;
+}
+.borderTable th
+{
+	border: 1px solid #666666;
+	padding: 1px;
+}
+.borderTable td
+{
+	border: 1px solid #666666;
+	padding: 1px;
+}
+
+.normalTable
+{
+	border: none;
+	border-collapse: collapse;
+}
+.normalTable th
+{
+	border: none;
+	padding: 2px;
+}
+.normalTable td
+{
+	border: none;
+	padding: 2px;
+}
+
+
+
+a.defLink
+{
+    cursor: help;
+}
+
+img.defLink
+{
+    margin-top:-5px;
+    padding-left:1px;
+}
+
+.NotesRow4Cell
+{
+    width:175px;
+    height: 100px;
+    overflow: scroll;
+}
+
+.NotesRow2Cell
+{
+    width:375px;
+    height: 100px;
+    overflow: scroll;
+}
+
+.NotesNormal
+{
+    width:750px;
+    height: 100px;
+    overflow: scroll;
+
+}
+
+.UserLabel
+{
+    FONT-SIZE: 16;
+    FONT-WEIGHT: bold;
+    VERTICAL-ALIGN: top;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+}
+
+.labelNoWrap
+{
+    white-space:nowrap;
+}
+
+.linkBtnNoHyperlink
+{
+    text-decoration:none;
+    cursor:default;
+    color:Black;
+}
+
+.noPad
+{
+    padding: 0px;
+}
+
+.tableWidth0 
+{
+    width:1%;
+     text-align:center;
+}
+
+.tableWidth1
+{
+    width:5%;
+     text-align:center;
+}
+
+.tableWidth2
+{
+    width:8%;
+     text-align:center;
+}
+
+.tableWidth21
+{
+    width:8%;
+     text-align:center;
+}
+
+.tableWidth3
+{
+    width:8%;
+     text-align:center;
+}
+
+.tableWidth4
+{
+    width:3%;
+     text-align:center;
+}
+
+.tableWidth5
+{
+    width:5%;
+     text-align:center;
+}
+
+.tableWidth6
+{
+    width:6%;
+     text-align:center;
+}
+
+.tableWidth7
+{
+    width:5%;
+     text-align:center;
+}
+
+.tableWidth8
+{
+    width:4%;
+     text-align:center;
+}
+
+.tableWidth9
+{
+    width:8%;
+     text-align:center;
+}
+
+.tableWidth10
+{
+    width: 5%;
+    text-align:center;
+}
+
+.AdjReasonGrid th
+{
+    background-color:White;
+}
+
+.AdjReasonGrid td
+{
+    padding: 2px 4px;
+}
+
+
+/* additions */
+.lblName25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+    width: 25%;
+    padding: 3px;
+    white-space: nowrap;
+}
+.lblValue25
+
+{
+    width: 25%;
+    padding: 3px;
+    font-weight: bold;
+}
+.lblValue75
+
+
+
+
+
+
+
+{
+    width: 75%;
+    padding: 3px;
+    font-weight: bold;
+}
+.dtName30
+
+{
+    width: 30%;
+    padding: 3px;
+    text-align: right;
+    white-space: nowrap;
+}
+.dtValue70
+
+{
+    width: 70%;
+    padding: 3px;
+}
+.red
+{
+    color: Red;    
+}
+
+.lblName30
+
+{
+    width: 30%;
+    padding: 3px;
+    text-align: right;
+    white-space: nowrap;
+}
+.lblValue70
+
+{
+    width: 70%;
+    padding: 3px;
+    font-weight: bold;
+}
+.pad
+
+{
+    padding: 3px;
+
+}
+.nowrap 
+
+{
+    white-space: nowrap;
+
+}
+.bold
+
+{
+    font-weight: bold;
+
+}
+
+
+
+.reqDepdHide
+{
+    display:none;
+}
+
+.reqShow
+{
+    display:block;
+}
+
+
+/* Tracking Progress for Initial Claim */
+/* Author - Praveen */
+        div.progtrckr
+        {
+            margin-top:5px;
+            margin-bottom:10px;
+        }
+        ol.progtrckr
+        {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            font-size:14px;
+        }
+        
+        ol.progtrckr li
+        {
+            display: inline-block;
+            text-align: center;
+            line-height: 3em;
+        }
+        
+        ol.progtrckr[data-progtrckr-steps="2"] li
+        {
+            width: 49%;
+        }
+        ol.progtrckr[data-progtrckr-steps="3"] li
+        {
+            width: 33%;
+        }
+        ol.progtrckr[data-progtrckr-steps="4"] li
+        {
+            width: 24%;
+        }
+        ol.progtrckr[data-progtrckr-steps="5"] li
+        {
+            width: 19%;
+        }
+        ol.progtrckr[data-progtrckr-steps="6"] li
+        {
+            width: 16%;
+        }
+        ol.progtrckr[data-progtrckr-steps="7"] li
+        {
+            width: 14%;
+        }
+        ol.progtrckr[data-progtrckr-steps="8"] li
+        {
+            width: 12%;
+        }
+        ol.progtrckr[data-progtrckr-steps="9"] li
+        {
+            width: 11%;
+        }
+        
+        ol.progtrckr li.progtrckr-done
+        {
+            color: black;
+            border-bottom: 4px solid yellowgreen;
+        }
+        ol.progtrckr li.progtrckr-todo
+        {
+            color: silver;
+            border-bottom: 4px solid silver;
+        }
+        
+        ol.progtrckr li:after
+        {
+            content: "\00a0\00a0";
+        }
+        ol.progtrckr li:before
+        {
+            position: relative;
+            bottom: -2.5em;
+            float: left;
+            left: 50%;
+            line-height: 1em;
+        }
+        ol.progtrckr li.progtrckr-done:before
+        {
+            content: "\2713";
+            color: white;
+            background-color: yellowgreen;
+            height: 1.2em;
+            width: 1.2em;
+            line-height: 1.2em;
+            border: none;
+            border-radius: 1.2em;
+        }
+        ol.progtrckr li.progtrckr-todo:before
+        {
+            content: "\039F";
+            color: silver;
+            background-color: white;
+            font-size: 1.5em;
+            bottom: -1.6em;
+        }
+        
+/* End Styles for - Tracking Progress for Initial Claim */        
+
+  .fixWidth tr td { width: 33%; }
+
+.WordWrapNotes {
+    float: left;
+    width: 1160px;
+    word-wrap: break-word;
+}

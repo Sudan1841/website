@@ -1,0 +1,223 @@
+/*------------------------------------------------*/
+/*	Skin: Dark Blue
+/*------------------------------------------------*/
+/* general */
+a {
+    color: #1e70a0;
+}
+a:hover, a:focus {
+  color: #347a98;
+}
+
+.top-bar {
+  background-color: #1e6887;
+}
+.top-bar .top-bar-right .btn-link {
+  color: #8ccbe5;
+}
+.top-bar .top-bar-right .btn-link:hover {
+  color: #fff;
+}
+.top-bar .notifications .count {
+  border-color: #1e6887;
+}
+.top-bar .searchbox input[type="search"] {
+  background-color: #103848;
+  border-color: #103848;
+}
+.top-bar .searchbox .btn {
+  background-color: #23789c;
+  border-color: #103848;
+}
+.top-bar .searchbox .btn .fa {
+  color: #195872;
+}
+.top-bar .searchbox .btn:hover {
+  border-color: #103848;
+}
+.top-bar .searchbox .btn:hover .fa {
+  color: #15485d;
+}
+
+/* widget */
+.widget {
+  border-color: #2c98c6;
+}
+
+.widget .widget-header {
+  background-color: #1e6887;
+  border-bottom-color: #195872;
+  color: #fff;
+}
+
+.ui-widget-header {
+    background: #1e6887;
+    color: #ffffff;
+}
+
+
+.widget-noborder .widget-header {
+  background-color: #1e6887;
+  border-bottom-color: #195872;
+  color: #fff;
+}
+
+.widget-header {
+  background-color: #1e6887;
+  border-bottom-color: #195872;
+  color: #fff;
+}
+
+
+.widget .widget-header em {
+  color: #fff;
+}
+.widget .widget-header .btn-help {
+  color: #38a5d3;
+}
+.widget .widget-header .widget-header-toolbar {
+  border-left-color: #1b5e7a;
+}
+.widget .widget-header .widget-header-toolbar .control-title {
+  color: #fff;
+}
+.widget .widget-header .btn-group > a {
+  color: #fff;
+}
+.widget .widget-header .btn-group > a:hover, .widget .widget-header .btn-group > a:focus {
+  color: #cef1ff;
+}
+
+.widget widget-border {
+    border-color: none;
+}
+
+/* main content */
+.main-header h2 {
+  color: #174e66;
+  border-right-color: #2c98c6;
+}
+.main-header em {
+  color: #217294;
+}
+
+/* footer */
+.footer {
+  background-color: #1e6887;
+}
+
+.tableFooterStyle
+{
+    background-color: #1e6887;
+    color: black;
+    font-weight: bold;
+}
+
+.sectHead,
+.sectHead A:link,
+.sectHead A:visited,
+.sectHead A:active,
+.sectHead A:hover,
+.sectHeadCenter,
+.sectHeadRight
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 100%;
+	VERTICAL-ALIGN: middle;
+	COLOR: #ffffff;
+	TEXT-INDENT: 2pt;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	HEIGHT: 27px;
+	BACKGROUND-COLOR: #1e6887;
+	TEXT-ALIGN: left;
+	padding-left: 10px;
+}
+
+
+
+
+#footer_2 {
+    background: #1e6887;/*rgba(0, 51, 102, 0.85) none repeat scroll 0 0;*/
+}
+#footer_2 {
+    color: #ffffff;
+    line-height: 2.5;
+    padding-top: 18px;
+    text-align: center;
+     margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    width: 100%;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+#footer_2 a {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    margin-right: 8px;
+    padding: 2px 1.4%;
+    white-space: nowrap;
+}
+#footer_2 a, #footer_2 a:hover, #footer_2 a:visited {
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #1e6887;
+    border-color: #1e6887;
+}
+
+    .btn-primary:hover {
+        background-color: #15485E;
+        border-color: #15485E;
+    }
+
+    .btn-primary.disabled, .btn-primary:disabled {
+        color: #fff !important;
+        background-color: #1e6887;
+        border-color: #1e6887;
+    }
+
+.ui-dialog {
+    z-index:1000000000;
+    top: 0; left: 0;
+    margin: auto;
+    position: fixed;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+.ui-dialog .ui-dialog-content {
+    flex: 1;
+}
+
+.modal-header {
+    color: #fff;
+    background-color: #1e6887;
+}
+
+.bg-primary {
+    background-color: #1e6887!important;
+    border-color: #1e6887;
+}
+
+    .bg-primary:hover {
+        background-color: #1e6887;
+        border-color: #1e6887;
+    }
+
+.widget-default {
+    border-color: lightgrey;
+}
+
+/*.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #1e6887;
+    border-color: #1e6887; /*set the color you want here*/
+}*/

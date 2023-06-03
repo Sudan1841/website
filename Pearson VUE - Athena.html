@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Cache-control" content="no-cache">
+        <meta http-equiv="Cache-control" content="no-store">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="expires" content="0">
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="initial-scale=1">
+
+        <link rel="shortcut icon" type="image/ico" href="https://testdelivery-hs-prd-3.pearsonvue.com/Minerva/resources/branding/favicon.ico">
+
+        <title>Pearson VUE - Athena</title>
+        <!-- Place all other scripts in the body for faster loading times -->
+
+        <link rel="stylesheet" type="text/css" href="Pearson%20VUE%20-%20Athena_files/spectrum.css">
+        <link id="textDecorationStyles" rel="stylesheet" type="text/css" href="Pearson%20VUE%20-%20Athena_files/textdecoration.css">
+
+
+
+
+        <style>
+            /* Should match #delivery-loading-overlay in base.css */
+            #delivery-loading-overlay {
+                width: 95%;
+                height: 100px;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+
+                margin: auto;
+            }
+
+            #delivery-loading-overlay > h1 {
+                font-family: Tahoma, Arial, Helvetica, sans-serif;
+                font-size: 1.75em;
+            }
+        </style>
+
+        <!-- dynamicCss section is used as placeholder for CSS created via javascript.  This is cleared and refreshed every time
+           a frame is rendered (i.e. navigation and so forth).  For example, this is used to allow for override of
+           the Calculator button via the QTI icon attribute.  See FrameData.prototype.renderApplicationIcon()
+        -->
+        <style id="dynamicCss"></style>
+    <style type="text/css"></style><style>.rc-fonts-Large {font-family:Verdana !important;font-size:13pt !important;font-weight:normal !important;}
+.rc-fonts-Normal {font-family:Verdana !important;font-size:12pt !important;font-weight:normal !important;}
+.rc-fonts-Small {font-family:Verdana !important;font-size:11pt !important;font-weight:normal !important;}
+.rc-fonts-ToolTip {font-family:Verdana !important;font-size:10pt !important;font-weight:normal !important;}
+.rc-fonts-Message {font-family:Verdana !important;font-size:12pt !important;font-weight:normal !important;}
+.rc-fonts-ItemText {font-family:Verdana !important;font-size:12pt !important;font-weight:normal !important;}
+.rc-fonts-TextEntry {font-family:Verdana !important;font-size:12pt !important;font-weight:normal !important;}
+</style><link rel="stylesheet" href="Pearson%20VUE%20-%20Athena_files/skin.css"></head>
+
+    <body dir="ltr" id="examPreview" aria-live="assertive" style="cursor: auto;">
+
+        <div id="delivery-loading-overlay" style="visibility: hidden;">
+            <h1>Loading, please wait…</h1>
+            <img src="Pearson%20VUE%20-%20Athena_files/indeterminate-loading-bar.gif">
+        </div>
+
+        <link rel="stylesheet" href="Pearson%20VUE%20-%20Athena_files/draganddrop.css">
+        <link rel="stylesheet" type="text/css" href="Pearson%20VUE%20-%20Athena_files/orderedList.css">
+
+        <link rel="stylesheet" href="Pearson%20VUE%20-%20Athena_files/jquery-ui_002.css">
+        <link rel="stylesheet" href="Pearson%20VUE%20-%20Athena_files/jquery-ui.css">
+
+        <link href="Pearson%20VUE%20-%20Athena_files/menu.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" href="Pearson%20VUE%20-%20Athena_files/base.css">
+
+        <link rel="stylesheet" href="Pearson%20VUE%20-%20Athena_files/screen.css">
+        <link rel="stylesheet" href="Pearson%20VUE%20-%20Athena_files/sprites-compiled.css">
+
+        <link rel="stylesheet" type="text/css" href="Pearson%20VUE%20-%20Athena_files/offline-theme-default.css">
+        <link rel="stylesheet" type="text/css" href="Pearson%20VUE%20-%20Athena_files/offline-language-english.css">
+
+        <link rel="stylesheet" type="text/css" href="Pearson%20VUE%20-%20Athena_files/multimedia.css">
+
+
+        <!--resource container css overrides-->
+        <style type="text/css">
+            
+
+/* Customizable CSS based on Resource Container */
+
+
+/* Primary Section */
+.Primary, .Primary button {
+    color           : #FFFFFF;
+    background-color: #006DAA;
+}
+
+/* Apply Primary theme to the JQueryUI Widgets */
+
+/* For exhibit tab text */
+.TabbedPane.ui-state-default a,
+.TabbedPane.ui-state-default a:link,
+.TabbedPane.ui-state-default a:visited {
+    color: #006DAA !important;
+}
+
+.TabbedPane.ui-state-active a,
+.TabbedPane.ui-state-active a:link,
+.TabbedPane.ui-state-active a:visited
+{
+    color: #006DAA !important;
+}
+
+
+/* general widget header and content */
+.Primary .ui-widget-header {
+    color           : #FFFFFF;
+    background-color: #006DAA;
+}
+.Primary .ui-dialog-buttonpane,
+.Primary .info-dialog,
+.Primary .question-dialog,
+.Primary .alert-dialog {
+    color           : #FFFFFF;
+    background-color: #006DAA;
+}
+.Primary .ui-button {
+    color           : #FFFFFF;
+    background-color: #006DAA;
+}
+
+/* End: **** Refactor this to start using Primary class **** */
+
+
+button.Primary:hover,.Primary button:hover, .Primary button :hover {
+    color           : #FFFF00;
+}
+
+.Primary .ui-dialog .ui-button-text:hover, .Primary .ui-dialog .ui-button-text :hover {
+    color           : #FFFFFF;
+}
+
+.inline-button-right {
+    border-left: 2px solid #FFFFFF;
+}
+
+.inline-button-left {
+    border-right: 2px solid #FFFFFF;
+}
+
+/* End of Primary Section */
+
+/* Secondary Section */
+.Secondary, .Secondary button, .Secondary a {
+    color           : #FFFFFF !important;
+    background-color: #80AEE1 !important;
+}
+button.Secondary:hover,.Secondary button:hover, .Secondary button :hover {
+    color           : #FFFF00 !important;
+}
+
+/* highlighter palette picker */
+.sp-replacer.highlighter, .sp-replacer .sp-preview {
+    color           : #FFFFFF !important;
+    border-color    : #FFFFFF !important;
+}
+.sp-replacer.highlighter :hover, .sp-replacer .sp-preview :hover {
+    color           : #FFFF00 !important;
+    border-color    : #FFFF00 !important;
+}
+
+.ui-dialog .mce-btn button {
+    color: black;
+    background-color: transparent;
+}
+
+/* End of Secondary Section */
+
+
+
+#TimeRemainingSectionButton.locked {
+color: #FFFF00;
+}
+
+
+/* Navigator Dialog and Review Screen */
+#navigator tbody tr.odd {
+    background-color: #FFFFFF;
+}
+#navigator tbody tr.even {
+    background-color: #F4F4F4;
+}
+#navigator tbody tr.selectedRowColor {
+    background-color: #FFFD6F;
+}
+#navigator tbody tr.navpoint:hover {
+    background-color: #FFFD6F;
+}
+#navigator thead th, #navigator table tbody tr td, .reviewItemEntry {
+    border-color: #C0C0C0;
+}
+#navigator table tbody tr td.unseenOrIncomplete,
+.reviewItemEntry .reviewItemTitleAndStatus .reviewIncorrect,
+.reviewItemEntry .reviewItemTitleAndStatus .reviewIncomplete,
+.reviewItemEntry .reviewItemTitleAndStatus .reviewUnseen,
+.reviewItemEntry .reviewItemTitleAndStatus .reviewPending
+{
+    color: #FF0000;
+}
+
+/* End of Navigator Grid */
+
+/* Symbol Picker Dialog */
+.key.highlight .Content {
+    color           : #FFFFFF;
+    background-color: #006DAA;
+}
+/* End of Symbol Picker Dialog */
+
+/* Text Selection Colors */
+::-moz-selection { /* Code for Firefox */
+    color: #000000;
+    background: #C0C0C0;
+}
+
+::selection {
+    color: #000000;
+    background: #C0C0C0;
+}
+
+/* End Text Selection Colors */
+
+/* Content Section */
+
+.Content,
+.Content.ui-widget-content,
+.Content .ui-widget-content,
+.Content textarea,
+.Content.ui-tabs .ui-tabs-panel,
+.Content .ui-tabs .ui-tabs-panel,
+.ui-selectmenu-text,
+.ui-selectmenu-menu,
+.Content input.shortResponse,
+.ui-dialog a.hover {
+    color           : #000000;
+}
+
+.Content table_container table,
+.Content table_container tr,
+.Content table_container th,
+.Content table_container td
+{
+    border-color : #000000 !important;
+}
+
+.Content .Block {
+    border-color : #000000;
+}
+
+.token-border-hover {
+    border-color : #0000FF !important;
+}
+input:focus
+{
+    outline:#000000 dotted 1px;
+}
+.reviewItemTitleAndStatus:hover .reviewItemTitle {
+    color : #0000FF;
+}
+#contentPane, #navigatorBody  {
+    background-color: #FFFFFF;
+}
+#splitItem, #splitItemReference,
+#splitItemReference.ui-tabs .ui-tabs-panel,
+#splitItemReference.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-selectmenu-text,
+.ui-selectmenu-menu,
+input.shortResponse{
+    background-color: #FFFFFF !important;
+    overflow: inherit;
+}
+/* End of Content Section */
+
+/* Exhibit button */
+
+.ExhibitButton, .ItemContentButton {
+    border-color: #006DAA;
+}
+
+/* Applying the default textHalign from default resource container */
+.ExhibitButton .ImageLabelContainer, .ItemContentButton .ImageLabelContainer {
+    float: center;
+}
+
+/* Applying text-align to exhibit and itemContent button to override text-align of base-rtl.css */
+.ExhibitButton, .ItemContentButton {
+    text-align: center;
+}
+/* End of Exhibit and ItemContent button */
+
+/* JQuery Dialogs */
+
+.ui-dialog.ui-widget-content,
+.ui-dialog-titlebar.ui-widget-header,
+.ui-tabs-nav.ui-widget-header {
+    background-color: #006DAA;
+}
+
+.ui-tabs .ui-tabs-nav li a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-state-processing a {
+    color: #006DAA;
+}
+
+span.find {
+    background-color: #C0C0C0;
+}
+
+span.findCurrent {
+    background-color: #FF9632;
+}
+
+/* End of JQuery Dialogs */
+
+
+
+/* Custom Icons */
+/* End of Custom Icons */
+
+
+
+
+
+
+	
+
+	
+
+		
+			
+
+
+
+
+			
+
+
+
+
+		
+
+
+		
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+
+
+
+		
+
+		
+		
+			
+
+			
+
+		
+
+		
+			
+			
+
+
+
+			
+				
+				
+                
+                
+			
+      
+			
+			
+        
+        
+        
+
+	
+
+
+<!-- -->
+
+
+
+
+
+
+
+	
+
+	
+
+		
+			
+
+
+
+
+			
+
+
+
+
+		
+
+
+		
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		
+
+
+
+		
+
+		
+		
+			
+
+			
+
+		
+
+		
+			
+			
+
+
+
+			
+				
+				
+                
+                
+			
+      
+			
+			
+        
+        
+        
+
+	
+
+
+        </style>
+
+        <div id="globalEventNotifier"></div>
+
+<div id="titlebar" class="Primary" title="GED Ready® - RLA  - Abdulmajid R Hassan">
+
+    <div id="application-logo">
+        <span class="ApplicationLogoImage">
+
+        </span>
+    </div>
+    <div id="titlebar-title" class="rc-fonts-Large" tabindex="0" style="visibility: visible;">
+                <span id="assessment-title">GED Ready® - RLA </span>
+ -         <span id="assessment-candidate">Abdulmajid R Hassan</span>
+
+    </div>
+    <div id="titlebar-info" style="visibility: visible;">
+        <div id="timer" role="timer" style="visibility: visible;">
+            <button id="TimeRemainingSectionButton" class="" aria-label="Time Remaining 00:39:49" style="">
+                <span id="timerPlaceholder"></span>
+                <span id="timerContents" class="rc-fonts-Message" aria-hidden="false">Time Remaining <span id="timeRemaining">00:39:49</span></span>
+            </button>
+        </div>
+        <div id="itemCounter" style="display: block;">
+            <button id="ItemOrdinalKnownButton" class="" aria-label="Question 1 of 1" style="display: inline-block;">
+                <div class="hidden-shim"></div>
+                <div id="itemCounterWrapper" aria-hidden="false"><span id="ItemOrdinalKnown" class="rc-fonts-Message">Question <span id="itemOrdinal">1</span> of <span id="itemCardinal">1</span></span></div>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="toolbar" class="Secondary" role="toolbar" style="height: 30px;">
+    <div id="toolbar-tools" style="visibility: visible;">
+        <button id="checkAnswerButton" class="rc-fonts-Small" data-accesskey="K" aria-describedby="UserInterface.Buttons.Button.CheckCorrect.accessibleDescription" style="display: none;">Chec<span class="accesskey">k</span> Answer</button><div id="UserInterface.Buttons.Button.CheckCorrect.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+        <button id="showAnswerButton" class="rc-fonts-Small" data-accesskey="O" aria-describedby="UserInterface.Buttons.Button.ShowCorrect.accessibleDescription" style="display: none;">Sh<span class="accesskey">o</span>w Answer</button><div id="UserInterface.Buttons.Button.ShowCorrect.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="SolutionButton" class="rc-fonts-Small" data-accesskey="X" aria-describedby="UserInterface.Buttons.Button.Solution.accessibleDescription" style="display: none;">E<span class="accesskey">x</span>plain Answer</button><div id="UserInterface.Buttons.Button.Solution.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+        </div>
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="CommentButton" class="rc-fonts-Small" data-accesskey="M" aria-describedby="UserInterface.Buttons.Button.Comment.accessibleDescription" style="display: none;">Co<span class="accesskey">m</span>ment</button><div id="UserInterface.Buttons.Button.Comment.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+        </div>
+
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="SymbolPickerButton" class="rc-fonts-Small" data-accesskey="B" aria-describedby="UserInterface.Buttons.Button.SymbolPicker.accessibleDescription" style="display: none;">Sym<span class="accesskey">b</span>ol</button><div id="UserInterface.Buttons.Button.SymbolPicker.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Character Selector</div>
+        </div>
+
+        <div class="icon-left" style="padding-left: 5px;">
+            <input id="HighlightColorPicker" style="display: none;"><div class="sp-replacer highlighter"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 255, 0);"></div></div><div class="sp-dd">▼</div></div>
+            <button id="HighlightButton" class="rc-fonts-Small" data-accesskey="J" style="display: inline-block;" accesskey="J">Highlight (<span class="accesskey">J</span>)</button>
+        </div>
+
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="StrikethroughButton" class="rc-fonts-Small" data-accesskey="W" style="display: none;">Strikethrough (<span class="accesskey">W</span>)</button>
+        </div>
+
+<div class="icon-left" style="padding-left: 0px;">
+    <button id="calculatorButton" class="application calculator rc-fonts-Small" data-type="Calculator" aria-describedby="UserInterface.Calculator.Property.AccessibleDescription.value" style="display: none;"></button>
+</div>
+<div id="appPlaceholder" style="display:none"></div>
+<div id="calculatorButtonHover" style="display:none"></div>
+<div id="calculatorButtonNonHover" style="display:none"></div>
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="ScratchPadButton" class="rc-fonts-Small" data-accesskey="D" style="display: none;">Scratch Pa<span class="accesskey">d</span></button>
+        </div>
+
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="ReviewInstructionsButton" class="rc-fonts-Normal" data-accesskey="T" style="display: none;">Ins<span class="accesskey">t</span>ructions</button>
+        </div>
+
+
+    </div>
+
+    <div id="toolbar-flags">
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="CloseAllButton" class="rc-fonts-Small" data-accesskey="L" aria-describedby="UserInterface.Buttons.Button.CloseAll.accessibleDescription" style="display: none;">C<span class="accesskey">l</span>ose All</button><div id="UserInterface.Buttons.Button.CloseAll.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate. Close all open windows</div>
+        </div>
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="PauseExamButton" class="rc-fonts-Small" aria-describedby="UserInterface.Buttons.Button.PauseExam.accessibleDescription" style="display: none;">Pause Exam</button><div id="UserInterface.Buttons.Button.PauseExam.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Initiate an exam pause</div>
+        </div>
+        <div class="icon-left" style="padding-left: 0px;">
+            <button id="FlagForReviewCommentButton" class="rc-fonts-Small" data-accesskey="C" role="checkbox" aria-checked="false" aria-describedby="UserInterface.Buttons.Button.FlagForReviewComment.accessibleDescription" style="display: none;">Flag for <span class="accesskey">C</span>omment</button><div id="UserInterface.Buttons.Button.FlagForReviewComment.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to Flag or Unflag.</div>
+        </div>
+        <div class="icon-left" style="padding-left: 5px;">
+            <button id="FlagForReviewItemButton" class="rc-fonts-Small FlagForReviewItemButtonUnselected" data-accesskey="F" role="checkbox" aria-checked="false" aria-describedby="UserInterface.Buttons.Button.FlagForReviewItem.accessibleDescription" style="display: inline-block;" accesskey="F"><span class="accesskey">F</span>lag for Review</button><div id="UserInterface.Buttons.Button.FlagForReviewItem.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to Flag or Unflag.</div>
+        </div>
+    </div>
+
+    <div id="textFind" class="Secondary hidden">
+        <input id="findBox" type="text" autocomplete="off" maxlength="255">
+        <div id="textFindOutputBox" style="display: none">
+            <label id="textFindCurrentSearchItem" class="textFindSearchItem">0</label>
+            <label id="textFindSlash" class="textFindSearchItem">/</label>
+            <label id="textFindTotalSearchItems" class="textFindSearchItem">0</label>
+        </div>
+        <label id="textFindVerticalPipe" class="textFindSearchItem">|</label>
+        <button id="textFindPrev" class="textFindButton" style="display: none;" title="Previous">▲</button>
+        <button id="textFindNext" class="textFindButton" style="display: none;" title="Next">▼</button>
+        <button id="textFindClose" class="textFindButton" style="display: none;" title="Close find bar">✕</button>
+    </div>
+</div>
+
+        <div id="contentPane" class="Content rc-fonts-ItemText" dir="ltr" tabindex="-1" role="main" style="visibility: visible; display: block; background-color: rgb(255, 255, 255); overflow: auto; top: 79px; bottom: 33px;" data-background-color="rgb(255, 255, 255)">
+            <div id="readMe" class="contentPaneLanguageWrapper dynamicContent heightRoot" dir="ltr" tabindex="-1"><div id="splitterExhibit" style="height: 672px; overflow: hidden; position: relative;" class="ui-layout-container"><div id="splitItemReference" class="ui-layout-west ui-tabs ui-widget ui-widget-content ui-corner-all ui-layout-pane ui-layout-pane-west" style="position: absolute; margin: 0px; inset: auto auto auto 0px; height: auto; z-index: 0; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(187, 187, 187); overflow: hidden; width: 717px; display: block; visibility: visible;"><ul id="ulItemReference" class="Primary ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all rc-fonts-Normal" role="tablist"><li class="ui-state-default ui-corner-top TabbedPane" role="tab" tabindex="-1" aria-controls="18105_Scroll_REVISED_0" aria-labelledby="ui-id-43" aria-selected="false" aria-expanded="false"><a href="#18105_Scroll_REVISED_0" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-43">page 1</a></li><li class="ui-state-default ui-corner-top TabbedPane ui-tabs-active ui-state-active" role="tab" tabindex="0" aria-controls="18105_Scroll_REVISED_1" aria-labelledby="ui-id-44" aria-selected="true" aria-expanded="true"><a href="#18105_Scroll_REVISED_1" class="ui-tabs-anchor" role="presentation" tabindex="-1" id="ui-id-44">page 2</a></li></ul><div class="ui-layout-content heightRoot" style="position: relative; overflow: auto; padding: 0px; height: 648px; visibility: visible;"><div id="splitTabContent" class="splitTabContent rc-fonts-ItemText"><div id="18105_Scroll_REVISED_0" class="exhibitContent tabbedDialogContent ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-43" role="tabpanel" aria-hidden="true" zfascrollpos="0" style="display: none;"><div class="tt content-root undef-width block-leading noPadding"><div class="sub-root undef-width" style="width: 664px;" zfaminwidth="60"><div class="tt undef-width block-leading noPadding" zfaminwidth="60" style="width: 662px;"><div class=" tt undef-width block-leading verticalPadding Block" style="padding: 0px; width: 660px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 658px;"><p class="paragraph-center"><b style="font-family: Verdana; font-size: 14pt">Instructions</b></p><p></p><p><b style="font-family: Verdana">Read</b></p></div></div><div class=" tt undef-width block-leading verticalPadding Block" style="padding: 0px; width: 660px;" zfaminwidth="60"><div class=" tt undef-width block-leading verticalPadding horizontalParent Block" style="padding: 0px; width: 658px;" zfaminwidth="60"><div class=" tt inline undef-width block-leading horizontalPadding Block" style="padding: 0px; width: 30px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>•</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 626px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 624px;"><p><span style="font-family: Verdana">On the </span><b style="font-family: Verdana">page 2 tab above,</b><span style="font-family: Verdana">&nbsp;you will </span><b style="font-family: Verdana">read two texts</b><span style="font-family: Verdana">&nbsp;presenting </span><b style="font-family: Verdana">different views</b><span style="font-family: Verdana">&nbsp;on the same topic.</span></p></div></div></div><div class="tt undef-width block-leading horizontalParent Block noPadding" style="padding: 0px; width: 658px;" zfaminwidth="60"><div class=" tt inline undef-width block-leading horizontalPadding Block" style="padding: 0px; width: 30px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>•</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 626px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 624px;"><p><b style="font-family: Verdana">Both writers argue</b><span style="font-family: Verdana">&nbsp;that </span><b>their position</b><span style="font-family: Verdana">&nbsp;on the issue is </span><b style="font-family: Verdana">correct.</b></p></div></div></div></div><div class=" tt undef-width block-leading verticalPadding Block" style="padding: 0px; width: 660px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 658px;"><p></p><p><b style="font-family: Verdana">Plan</b></p></div></div><div class=" tt undef-width block-leading verticalPadding Block" style="padding: 0px; width: 660px;" zfaminwidth="60"><div class=" tt undef-width block-leading verticalPadding horizontalParent Block" style="padding: 0px; width: 658px;" zfaminwidth="60"><div class=" tt inline undef-width block-leading horizontalPadding Block" style="padding: 0px; width: 30px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>•</p></div></div><div class="tt inline undef-width block-leading Block noPadding" style="padding: 0px; width: 626px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 624px;"><p><b style="font-family: Verdana">Analyze</b><span style="font-family: Verdana">&nbsp;the two texts </span><b style="font-family: Verdana">to determine</b><span style="font-family: Verdana">&nbsp;which writer presents the </span><b style="font-family: Verdana">stronger case.</b></p></div></div></div><div class=" tt undef-width block-leading verticalPadding horizontalParent Block" style="padding: 0px; width: 658px;" zfaminwidth="60"><div class=" tt inline undef-width block-leading horizontalPadding Block" style="padding: 0px; width: 30px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>•</p></div></div><div class="tt inline undef-width block-leading Block noPadding" style="padding: 0px; width: 626px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 624px;"><p><b style="font-family: Verdana">Develop your own argument</b><span style="font-family: Verdana">&nbsp;in which </span><b style="font-family: Verdana">you explain</b><span style="font-family: Verdana">&nbsp;how one position is </span><b style="font-family: Verdana">better supported</b><span style="font-family: Verdana">&nbsp;than the other.</span></p></div></div></div><div class="tt undef-width block-leading horizontalParent noPadding" zfaminwidth="60" style="width: 658px;"><div class=" tt inline undef-width block-leading horizontalPadding Block" style="padding: 0px; width: 30px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>•</p></div></div><div class="tt inline undef-width block-leading Block noPadding" style="padding: 0px; width: 626px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 624px;"><p><b style="font-family: Verdana">Include </b><span style="font-family: Verdana">relevant and specific </span><b style="font-family: Verdana">evidence</b><span style="font-family: Verdana">&nbsp;from </span><b style="font-family: Verdana">both sources</b><span style="font-family: Verdana">&nbsp;to support your argument.</span></p></div></div></div></div><div class=" tt undef-width block-leading verticalPadding Block" style="padding: 0px; width: 660px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 658px;"><p></p><p><b style="font-family: Verdana">Write</b></p></div></div><div class=" tt undef-width block-leading verticalPadding Block" style="padding: 0px; width: 660px;" zfaminwidth="60"><div class=" tt undef-width block-leading verticalPadding horizontalParent Block" style="padding: 0px; width: 658px;" zfaminwidth="60"><div class=" tt inline undef-width block-leading horizontalPadding Block" style="padding: 0px; width: 30px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>•</p></div></div><div class="tt inline undef-width block-leading Block noPadding" style="padding: 0px; width: 626px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 624px;"><p><b style="font-family: Verdana">Type</b><span style="font-family: Verdana">&nbsp;your response in the </span><b style="font-family: Verdana">box on the right.</b></p></div></div></div><div class=" tt undef-width block-leading verticalPadding horizontalParent Block" style="padding: 0px; width: 658px;" zfaminwidth="60"><div class=" tt inline undef-width block-leading horizontalPadding Block" style="padding: 0px; width: 30px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>•</p></div></div><div class="tt inline undef-width block-leading Block noPadding" style="padding: 0px; width: 626px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 624px;"><p><span style="font-family: Verdana">Your response should be approximately </span><b style="font-family: Verdana">4 to 7 paragraphs of 3 to 7 sentences each.</b></p></div></div></div><div class="tt undef-width block-leading horizontalParent Block noPadding" style="padding: 0px; width: 658px;" zfaminwidth="60"><div class=" tt inline undef-width block-leading horizontalPadding Block" style="padding: 0px; width: 30px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>•</p></div></div><div class="tt inline undef-width block-leading Block noPadding" style="padding: 0px; width: 626px;" zfaminwidth="30"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 624px;"><p><b style="font-family: Verdana">Remember</b><span style="font-family: Verdana">&nbsp;to allow a few minutes </span><b style="font-family: Verdana">to review and edit your response.</b></p></div></div></div></div><div class="tt undef-width block-leading noPadding" zfaminwidth="30" style="width: 660px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 658px;"><p></p><p></p><p><u style="font-family: Verdana">You have up to </u><b style="font-family: Verdana"><u>45 minutes</u></b><u style="font-family: Verdana">&nbsp;for reading, planning, writing, and editing your response.</u></p></div></div></div></div></div></div><div id="18105_Scroll_REVISED_1" class="exhibitContent tabbedDialogContent ui-tabs-panel ui-widget-content ui-corner-bottom" aria-labelledby="ui-id-44" role="tabpanel" style="display: block;" aria-hidden="false"><div class="tt content-root undef-width block-leading noPadding"><div class="sub-root undef-width" style="width: 647px;" zfaminwidth="78"><div class="tt undef-width block-leading noPadding" zfaminwidth="78" style="width: 645px;"><div class=" tt undef-width block-leading verticalPadding" zfaminwidth="78" style="width: 643px;"><div class=" tt undef-width block-leading verticalPadding" zfaminwidth="30" style="width: 641px;"><div class=" tt undef-width block-center noPadding" leafdatatype="text" zfaminwidth="30" style="width: 639px;"><p class="paragraph-center"><span style="font-size: 16pt">Diamond Mining: Harmful to the Environment</span></p></div><div class="tt undef-width block-center noPadding" leafdatatype="text" zfaminwidth="30" style="width: 639px;"><p class="paragraph-center">by Tavin McLeavitt</p></div></div><div class=" tt undef-width block-leading verticalPadding horizontalParent" zfaminwidth="78" style="width: 641px;"><div class=" tt inline undef-width block-leading horizontalPadding" zfaminwidth="48" style="width: 48px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>1</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 591px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 589px;"><p>The
+ diamond mining industry directly affects an estimated 10 million people
+ around the world. Eleven nations are currently considered major 
+producers of diamonds, and several other countries also currently 
+operate diamond mines. While some companies and countries have made a 
+fortune from diamond mining, the diamond mining industry as a whole has a
+ long history of abusing human rights and exploiting workers. The 
+industry's devastating impact on the environment is another reason why 
+diamond mining should be banned.</p></div></div></div><div class="tt undef-width block-leading horizontalParent noPadding" zfaminwidth="78" style="width: 641px;"><div class=" tt inline undef-width block-leading horizontalPadding" zfaminwidth="48" style="width: 48px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>2</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 591px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 589px;"><p>During
+ any mining process, the soil, water, and air surrounding a mine become 
+polluted. Diamond mining is no different. Large quantities of soil must 
+be removed, reducing available natural land resources. For example, the 
+process of removing soil along the coast forever changes shorelines, 
+which has a wide-ranging impact. In addition, any mine's expansion 
+encroaches on natural animal habitats, decreasing wildlife populations.</p></div></div></div></div><div class=" tt undef-width block-leading verticalPadding" zfaminwidth="78" style="width: 643px;"><div class=" tt undef-width block-leading verticalPadding horizontalParent" zfaminwidth="78" style="width: 641px;"><div class=" tt inline undef-width block-leading horizontalPadding" zfaminwidth="48" style="width: 48px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>3</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 591px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 589px;"><p>Diamond
+ mining also affects water supply and quality. Water is used to extract 
+diamonds, but water is a scarce resource in Africa, where many of the 
+world's diamond mines are located. Many countries cannot afford to trade
+ a necessity like clean water for a luxury like diamonds. Canada's 
+Northwest Territories provides an example of how water is affected by 
+diamond mining. Companies have drained twenty lakes, causing massive 
+changes to the environment and disrupting the natural habitats of many 
+species. Caribou in the Northwest Territories appear to be migrating 
+away from traditional habitats that have been disturbed by diamond 
+mining operations.</p></div></div></div><div class="tt undef-width block-leading horizontalParent noPadding" zfaminwidth="78" style="width: 641px;"><div class=" tt inline undef-width block-leading horizontalPadding" zfaminwidth="48" style="width: 48px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>4</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 591px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 589px;"><p>Finally,
+ energy sources used to operate diamond mines create greenhouse gases. 
+Diesel fuels, electricity, and hydrocarbons used in diamond mining all 
+release harmful carbons into the air. These chemicals cause smog, 
+climate change, and other environmental hazards yet to be discovered. 
+The long-term environmental impact is simply not worth the financial 
+gains a few corporations and countries desire.</p></div></div></div></div><div class=" tt undef-width block-leading verticalPadding" zfaminwidth="78" style="width: 643px;"><div class=" tt undef-width block-leading verticalPadding" zfaminwidth="30" style="width: 641px;"><div class=" tt undef-width block-center noPadding" leafdatatype="text" zfaminwidth="30" style="width: 639px;"><p class="paragraph-center"><span style="font-size: 16pt">Diamond Mining Companies Find New Ways to Preserve the Environment</span></p></div><div class="tt undef-width block-center noPadding" leafdatatype="text" zfaminwidth="30" style="width: 639px;"><p class="paragraph-center">by Shaunna Rangel</p></div></div><div class=" tt undef-width block-leading verticalPadding horizontalParent" zfaminwidth="78" style="width: 641px;"><div class=" tt inline undef-width block-leading horizontalPadding" zfaminwidth="48" style="width: 48px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>5</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 591px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 589px;"><p>The
+ diamond mining industry is not the environmental villain it is often 
+portrayed to be. Although any mining operation for any important mineral
+ can disturb delicate ecology, diamond mining companies have proven to 
+be responsive to public concern and have worked hard to reduce the 
+impact of their search for what could be argued as the world's most 
+precious and symbolic resource. World governments are cooperating to 
+ensure environmental safety and preservation around diamond mines. In 
+some cases, areas surrounding the mines are actually improved!</p></div></div></div><div class="tt undef-width block-leading horizontalParent noPadding" zfaminwidth="78" style="width: 641px;"><div class=" tt inline undef-width block-leading horizontalPadding" zfaminwidth="48" style="width: 48px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>6</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 591px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 589px;"><p>A
+ number of wildlife preserves have been established to protect and breed
+ species of animals endangered by diamond mines. For example, the Diavik
+ Diamond Mine in Canada has implemented an advisory board to study ways 
+to protect the fish near the mining area. The program was so successful 
+that it has widened to include the arctic deer. In South Africa, the 
+national parks system has worked together with the Peace Parks 
+Foundation and the diamond industry to set up a conservation area for 
+wildlife near the Venetia Diamond Mine.</p></div></div></div></div><div class="tt undef-width block-leading noPadding" zfaminwidth="78" style="width: 643px;"><div class="tt undef-width block-leading horizontalParent noPadding" zfaminwidth="78" style="width: 641px;"><div class=" tt inline undef-width block-leading horizontalPadding" zfaminwidth="48" style="width: 48px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 30px;"><p>7</p></div></div><div class="tt inline undef-width block-leading noPadding" zfaminwidth="30" style="width: 591px;"><div class="tt undef-width block-leading noPadding" leafdatatype="text" zfaminwidth="30" style="width: 589px;"><p>Governments
+ are trying to reduce waste and reuse resources while mining for 
+diamonds. Environmental management companies closely monitor the mines 
+and routinely publish reports on their environmental impact. Many of the
+ mines even do more than the minimum required by regulated standards. A 
+number of mine operators restore topsoil removed from a mining site. 
+Researchers are working on new, less water-intensive methods of diamond 
+extraction. Measures to use energy sources that do not emit dangerous 
+carbons into the air have been put into place, and the levels of 
+chemicals that reach the air are closely monitored. With support and 
+regulation from governments, the mining industry can safely continue to 
+benefit a large number of people who live in the countries where 
+diamonds are mined.</p></div></div></div></div></div></div></div></div></div></div></div><div id="splitItem" class="ui-layout-center ui-layout-pane ui-layout-pane-center" style="position: absolute; margin: 0px; inset: 0px 0px 0px 723px; height: 670px; width: 715px; z-index: 0; padding: 0px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(187, 187, 187); overflow: hidden; display: block; visibility: visible;"><div class="ui-layout-content heightRoot" style="position: relative; overflow: auto; padding: 0px; height: 670px; visibility: visible;"><div class="tt content-root undef-width block-leading Block noPadding" style=" padding:5px 5px 5px 5px; "><div class="sub-root undef-width" style="width: 688px;" zfaminwidth="205"><div class="tt undef-width block-leading noPadding" zfaminwidth="205" style="width: 686px;"><div class="tt undef-width block-leading margin-align noPadding" leafdatatype="essay_text_area" zfaminwidth="205" style="width: 684px;"><div id="mceu_5" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px; width: 99%;" origheight="400"><div id="mceu_5-body" class="mce-container-body mce-stack-layout"><div id="mceu_6" class="mce-toolbar-grp mce-container mce-panel mce-first mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group"><div id="mceu_6-body" class="mce-container-body mce-stack-layout"><div id="mceu_7" class="mce-container mce-toolbar mce-first mce-last mce-stack-layout-item" role="toolbar"><div id="mceu_7-body" class="mce-container-body mce-flow-layout"><div id="mceu_8" class="mce-container mce-first mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_8-body"><div id="mceu_0" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mceu_0" role="button" aria-label="Cut"><div id="418003-18105.Response1_Cut"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-cut"></i>Cut</button></div></div><div id="mceu_1" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mceu_1" role="button" aria-label="Copy"><div id="418003-18105.Response1_Copy"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-copy"></i>Copy</button></div></div><div id="mceu_2" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mceu_2" role="button" aria-label="Paste"><div id="418003-18105.Response1_Paste"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-paste"></i>Paste</button></div></div></div></div><div id="mceu_9" class="mce-container mce-last mce-flow-layout-item mce-btn-group" role="group"><div id="mceu_9-body"><div id="mceu_3" class="mce-widget mce-btn mce-first mce-disabled" tabindex="-1" aria-labelledby="mceu_3" role="button" aria-label="Undo" aria-disabled="true"><div id="418003-18105.Response1_Undo"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-undo"></i>Undo</button></div></div><div id="mceu_4" class="mce-widget mce-btn mce-last mce-disabled" tabindex="-1" aria-labelledby="mceu_4" role="button" aria-label="Redo" aria-disabled="true"><div id="418003-18105.Response1_Redo"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-redo"></i>Redo</button></div></div></div></div></div></div></div></div><div id="mceu_10" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="418003-18105.Response1_ifr" allowtransparency="true" title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help" style="width: 100%; height: 612px; display: block;" src='javascript:""' frameborder="0"></iframe></div><div id="mceu_11" class="mce-statusbar mce-container mce-panel mce-last mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><div id="mceu_11-body" class="mce-container-body mce-flow-layout"></div></div></div></div><textarea id="418003-18105.Response1" class="essayComponent" style="display: none;" aria-hidden="true"></textarea></div></div></div></div></div></div><div id="" style="position: absolute; padding: 0px; margin: 0px; font-size: 1px; text-align: left; overflow: hidden; z-index: 2; border: medium none; left: 717px; cursor: default; height: 672px; width: 6px; top: 0px;" class="ui-layout-resizer ui-layout-resizer-west ui-layout-resizer-open ui-layout-resizer-west-open Primary"></div></div></div>
+        </div>
+
+        <div id="navigationbar" class="Primary" role="navigation">
+    <div id="navigation-help-finish" style="visibility: visible;">
+   		<div class="inline-button-left">
+               <button id="HelpButton" class="rc-fonts-Normal" data-accesskey="H" aria-describedby="UserInterface.Buttons.Button.Help.accessibleDescription" style="display: none;"><span class="accesskey">H</span>elp</button><div id="UserInterface.Buttons.Button.Help.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+   		</div>
+   		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+               <button id="EndExamButton" class="rc-fonts-Normal" data-accesskey="E" aria-describedby="UserInterface.Buttons.Button.EndExam.accessibleDescription" style="display: none;"><span class="accesskey">E</span>nd Test</button><div id="UserInterface.Buttons.Button.EndExam.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+   		</div>
+   		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+               <button id="EndAgreementButton" class="rc-fonts-Normal" data-accesskey="E" style="display: none;"><span class="accesskey">E</span>nd Agreement</button>
+   		</div>
+   		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+               <button id="EndIntroductionButton" class="rc-fonts-Normal" data-accesskey="E" style="display: none;"><span class="accesskey">E</span>nd Introduction</button>
+   		</div>
+   		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+               <button id="EndTutorialButton" class="rc-fonts-Normal" data-accesskey="E" style="display: none;"><span class="accesskey">E</span>nd Tutorial</button>
+   		</div>
+		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+			<button id="EndExitButton" class="rc-fonts-Normal" data-accesskey="E" style="display: none;"><span class="accesskey">E</span>nd</button>
+		</div>
+   		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+               <button id="EndModuleButton" class="rc-fonts-Normal" data-accesskey="E" style="display: none;"><span class="accesskey">E</span>nd Test</button>
+   		</div>
+   		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+               <button id="EndSurveyButton" class="rc-fonts-Normal" data-accesskey="E" style="display: none;"><span class="accesskey">E</span>nd Survey</button>
+   		</div>
+   		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+               <button id="ReviewScreenButton" class="rc-fonts-Normal" data-accesskey="S" aria-describedby="UserInterface.Buttons.Button.ReviewScreen.accessibleDescription" style="display: none;">Review <span class="accesskey">S</span>creen</button><div id="UserInterface.Buttons.Button.ReviewScreen.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+   		</div>
+   		<div class="inline-button-left icon-left" style="padding-left: 0px;">
+               <button id="EndReviewButton" class="rc-fonts-Normal" data-accesskey="E" aria-describedby="UserInterface.Buttons.Button.EndReview.accessibleDescription" style="display: none;"><span class="accesskey">E</span>nd Review</button><div id="UserInterface.Buttons.Button.EndReview.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+   		</div>
+   	</div>
+
+   	<div id="navigation-jump" style="visibility: visible;">
+		<div class="inline-button-right icon-left" style="padding-left: 0px;">
+			   <button id="ReviewAllButton" class="rc-fonts-Normal" data-accesskey="A" aria-describedby="UserInterface.Buttons.Button.ReviewAll.accessibleDescription" style="display: none;">Review <span class="accesskey">A</span>ll</button><div id="UserInterface.Buttons.Button.ReviewAll.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+		<div class="inline-button-right icon-left" style="padding-left: 0px;">
+			   <button id="ReviewIncompleteButton" class="rc-fonts-Normal" data-accesskey="I" aria-describedby="UserInterface.Buttons.Button.ReviewIncomplete.accessibleDescription" style="display: none;">Rev<span class="accesskey">i</span>ew Unanswered</button><div id="UserInterface.Buttons.Button.ReviewIncomplete.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+		<div class="inline-button-right icon-left" style="padding-left: 0px;">
+			   <button id="ReviewIncorrectButton" class="rc-fonts-Normal" data-accesskey="I" aria-describedby="UserInterface.Buttons.Button.ReviewIncorrect.accessibleDescription" style="display: none;">Review <span class="accesskey">I</span>ncorrect</button><div id="UserInterface.Buttons.Button.ReviewIncorrect.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		   </div>
+		<div class="inline-button-right icon-left" style="padding-left: 0px;">
+			   <button id="ReviewFlaggedButton" class="rc-fonts-Normal" data-accesskey="V" aria-describedby="UserInterface.Buttons.Button.ReviewFlagged.accessibleDescription" style="display: none;">Re<span class="accesskey">v</span>iew Flagged</button><div id="UserInterface.Buttons.Button.ReviewFlagged.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+		   <div class="inline-button-right icon-left" style="padding-left: 5px;">
+			   <button id="PreviousButton" class="rc-fonts-Normal" data-accesskey="P" left="" aria-describedby="UserInterface.Buttons.Button.Previous.accessibleDescription" style="display: inline-block;" accesskey="P"><span class="accesskey">P</span>revious</button><div id="UserInterface.Buttons.Button.Previous.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+		<div class="inline-button-right">
+			   <button id="NavigatorButton" class="rc-fonts-Normal" data-accesskey="V" aria-describedby="UserInterface.Buttons.Button.Navigator.accessibleDescription" style="display: inline-block;" accesskey="V">Na<span class="accesskey">v</span>igator</button><div id="UserInterface.Buttons.Button.Navigator.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+		<div class="inline-button-right icon-right">
+			   <button id="NextButton" class="rc-fonts-Normal" data-accesskey="N" aria-describedby="UserInterface.Buttons.Button.Next.accessibleDescription" style="display: inline-block;" accesskey="N"><span class="accesskey">N</span>ext</button><div id="UserInterface.Buttons.Button.Next.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+		<div class="inline-button-right icon-right">
+			<button id="ContinueExamButton" class="rc-fonts-Normal" data-accesskey="C" aria-describedby="UserInterface.Buttons.Button.ContinueExam.accessibleDescription" style="display: none;"><span class="accesskey">C</span>ontinue Exam</button><div id="UserInterface.Buttons.Button.ContinueExam.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+		<div class="inline-button-right icon-right">
+			   <button id="BeginBreakButton" class="rc-fonts-Normal" data-accesskey="B" aria-describedby="UserInterface.Buttons.Button.BeginBreak.accessibleDescription" style="display: none;"><span class="accesskey">B</span>egin Break</button><div id="UserInterface.Buttons.Button.BeginBreak.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+		<div class="inline-button-right icon-left" style="padding-left: 0px;">
+		<button id="EndBreakButton" class="rc-fonts-Normal" data-accesskey="E" aria-describedby="UserInterface.Buttons.Button.EndBreak.accessibleDescription" style="display: none;"><span class="accesskey">E</span>nd Break</button><div id="UserInterface.Buttons.Button.EndBreak.accessibleDescription" class="accessibility-hidden" aria-hidden="true">Use Space to activate.</div>
+		</div>
+   	</div>
+</div><div class="accessibility-hidden" aria-hidden="true"><div id="accessibility-global"><h1 role="presentation" id="UserInterface.AccessibleDescriptions.Property.TextField.value">Type in text</h1><h1 role="presentation" id="UserInterface.AccessibleDescriptions.Property.RadioButton.value">Use Arrow Keys to Select, Use Space to UnCheck.</h1><h1 role="presentation" id="UserInterface.AccessibleDescriptions.Property.CheckBox.value">Use Space to Check or Uncheck</h1><h1 role="presentation" id="UserInterface.Calculator.Property.AccessibleDescription.value">Use space to activate.</h1></div><div id="accessibility-hidden-local"></div></div>
+    
+           
+
+            <script async="" src="Pearson%20VUE%20-%20Athena_files/analytics.js"></script><script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/jquery_002.js"></script>
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/jquery-ui.js"></script>
+
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/console.js"></script>
+
+
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/clientProxy.js"></script>
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/minimized.js"></script>
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/jquery_005.js"></script>
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/jquery_003.js">
+            </script>
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/jquery_004.js"></script>
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/tinymce.js">
+            </script>
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/jquery.js">
+            </script>
+
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/offline.js">
+            </script>
+            <script type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/lodash.js">
+            </script>
+
+        
+        <script id="offline-handler" type="text/javascript" src="Pearson%20VUE%20-%20Athena_files/offline-handler.js"></script>
+
+
+        <script type="text/javascript">
+            var contextPath = "/Minerva";
+            var examLanguage = "ENU";
+            var rcImageFileNames = ["GEDTS_SAMPLE_RC/GEDTS_SAMPLE_RC.ZIP FOLDER/EQEDITOR.PNG","GEDTS_SAMPLE_RC/GEDTS_SAMPLE_RC.ZIP FOLDER/HOTSPOTMARKER.GIF",];
+            var accommodationCodes = {};
+
+            $(function () {
+                // Perform the following when the document is ready
+                $(document).ready(function () {
+                    // Bootstrap angular when the exam transition happens. m$ is reloaded when a new event is loaded, losing its AngularJS parameters.
+                    // This is a hack to rebootstrap angular instead of entire page reload.
+                    // Initialize m$ function, done only once when the delivery frame page is loaded.
+                    m$.serverChallenge = null;
+                    m$.serverChallengeResponse = null;
+                    m$.errorUrl = "https://wsr.pearsonvue.com/web2JSP/core/logError.jsp?error=y";
+                    // Store in sessionStorage so that it's accessible in attemptResume.jsp
+                    sessionStorage.setItem("errorUrl", "https://wsr.pearsonvue.com/web2JSP/core/logError.jsp?error=y");
+                    handleAccommodations(accommodationCodes);
+                    m$.init("375989952", "394fa3af-a869-4dca-8ac5-05bf2e2695bc", "GEDTSRLA_REENU1", "abc21a18-9993-4ac9-9dbe-de6a580cb6b7").displayContent();
+                    m$.initHeartbeat(60000, 0);
+                    ;
+                });
+            });
+        </script>
+
+        <script>
+            //Google Analytics generated code, don't edit.
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                            (i[r].q = i[r].q || []).push(arguments)
+                        }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+        </script>
+
+        <script>
+
+            //Pearson specfic settings
+
+            ga('create', 'UA-2550497-20', 'pearsonvue.com');
+            ga('set', 'dimension1', 'GEDTSRLA_REENU1');
+                ga('set', 'dimension2', 'HSandST');
+            ga('send', 'pageview');
+
+            // offline.js currently adding an anchor (hidden) that is currently tabbable.
+            //  disabling this until offline.js is prime for use.
+            document.addEventListener("DOMContentLoaded", function() {
+                $('.offline-ui-retry').attr('tabindex', '-1');
+            }, false);
+        </script>
+    
+
+<div class="offline-ui offline-ui-up"><div class="offline-ui-content"></div><a href="" class="offline-ui-retry" tabindex="-1"></a></div><div class="sp-container sp-hidden highlighter sp-input-disabled sp-buttons-disabled sp-palette-buttons-disabled sp-palette-only sp-initial-disabled" style="position: absolute; top: 0px; left: 0px;"><div class="sp-palette-container"><div class="sp-palette sp-thumb sp-cf"><div class="sp-cf sp-palette-row sp-palette-row-0"><span title="rgb(255, 255, 0)" data-color="rgb(255, 255, 0)" class="sp-thumb-el sp-thumb-light sp-thumb-active"><span class="sp-thumb-inner" style="background-color:rgb(255, 255, 0);"></span></span><span title="rgb(0, 255, 0)" data-color="rgb(0, 255, 0)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(0, 255, 0);"></span></span><span title="rgb(255, 174, 185)" data-color="rgb(255, 174, 185)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 174, 185);"></span></span><span title="rgb(66, 192, 251)" data-color="rgb(66, 192, 251)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(66, 192, 251);"></span></span><span title="rgb(255, 1, 1)" data-color="rgb(255, 1, 1)" class="sp-thumb-el sp-thumb-light"><span class="sp-thumb-inner" style="background-color:rgb(255, 1, 1);"></span></span></div><div class="sp-cf sp-palette-row sp-palette-row-selection"></div></div><div class="sp-palette-button-container sp-cf"><button type="button" class="sp-palette-toggle">more</button></div></div><div class="sp-picker-container"><div class="sp-top sp-cf"><div class="sp-fill"></div><div class="sp-top-inner"><div class="sp-color" style="background-color: rgb(255, 255, 0);"><div class="sp-sat"><div class="sp-val"><div class="sp-dragger" style="display: block; top: 0px; left: 0px;"></div></div></div></div><div class="sp-clear sp-clear-display" style="display: none;" title="Clear Color Selection"></div><div class="sp-hue"><div class="sp-slider" style="display: block; top: 0px;"></div></div></div><div class="sp-alpha"><div class="sp-alpha-inner"><div class="sp-alpha-handle" style="display: block; left: 0px;"></div></div></div></div><div class="sp-input-container sp-cf"><input class="sp-input" type="text" spellcheck="false"></div><div class="sp-initial sp-thumb sp-cf"></div><div class="sp-button-container sp-cf"><a class="sp-cancel" href="#">cancel</a><button type="button" class="sp-choose">choose</button></div></div></div></body></html>
